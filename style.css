@@ -189,9 +189,10 @@ a:after {
 }
 
 .homeTitle h1 {
+    font-weight: bold;
     text-align: justify;
     margin-top: 5vh;
-    margin-bottom: 15vh;
+    margin-bottom: 7vh;
     font-size: 4rem;
     color: var(--gray);
 }
@@ -200,16 +201,17 @@ a:after {
     margin-right: 3vw;
 }
 
-.homeTitle a {
+.homeTitle button {
     background-color: #fff;
     color: var(--primary);
     padding: 2.2rem;
     border-radius: 1rem;
     font-weight: bolder;
     font-size: 3rem;
+    margin-left: 10vw;
 }
 
-.homeTitle a:hover {
+.homeTitle button:hover {
     background-color: var(--light-color);
 }
 
@@ -225,6 +227,7 @@ a:after {
 }
 
 .products h1 {
+    font-weight: bold;
     font-size: 4rem;
     margin-bottom: 6vh;
 }
@@ -264,9 +267,10 @@ a:after {
 
 .productDescription button {
     cursor: pointer;
+    font-size: small;
     background-color: var(--primary);
     color: whitesmoke;
-    width: 1.1vw;
+    width: 1.4vw;
     height: fit-content;
     border-radius: 50%;
     margin-left: 0.5vw;
@@ -276,7 +280,7 @@ a:after {
     margin-bottom: 5vh;
 }
 
-.chooseNow a {
+.chooseNow button {
     font-size: 1.5rem;
     background-color: var(--primary);
     color: #fff;
