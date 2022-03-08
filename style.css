@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Livvic:wght@500&family=Roboto:wght@700&display=swap');
+
 :root {
     --primary: #E25E20;
     --black: #130f40;
+    --gray: #323339;
     --light-color: #666;
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     --border: .2rem solid rgba(0, 0, 0, .1);
@@ -18,7 +20,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
 }
 
@@ -103,20 +105,20 @@ section {
     color: var(--primary);
 }
 
-.header .navbar ul { 
+.header .navbar ul {
 
-    padding: 0; 
-    list-style: none; 
+    padding: 0;
+    list-style: none;
     display: table;
     width: 600px;
     text-align: center;
-  }
+}
 
-  .header .navbar li { 
-    display: table-cell; 
-    position: relative; 
+.header .navbar li {
+    display: table-cell;
+    position: relative;
 
-  }
+}
 
 
 .header .navbar a {
@@ -128,8 +130,8 @@ section {
     position: relative;
 }
 
-a:after {    
-    background: var(--primary) repeat scroll 0 0  var(--primary);
+a:after {
+    background: var(--primary) repeat scroll 0 0 var(--primary);
     bottom: 0;
     content: "";
     display: block;
@@ -140,23 +142,25 @@ a:after {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
-.header .navbar a:hover { 
+
+.header .navbar a:hover {
     color: var(--primary);
     padding: 1vh 1vw;
 }
-.header .navbar a:hover:after { 
-    width: 100%; 
-    left: 0; 
+
+.header .navbar a:hover:after {
+    width: 100%;
+    left: 0;
     color: var(--primary);
 }
 
 /* ICON HEADER KANAN */
 .header .icons div {
     height: 4.5rem;
-    width: 4.5rem;                     
+    width: 4.5rem;
     line-height: 4.5rem;
     border-radius: .5rem;
-    outline: 1px solid  var(--primary);
+    outline: 1px solid var(--primary);
     color: var(--black);
     font-size: 2rem;
     margin-left: .3rem;
@@ -173,26 +177,110 @@ a:after {
     /* display: none; */
 }
 
-/*TITLE */
+/* css for banner */
 .home {
-    text-align: center;
-    width: 60rem;
+    width: fit-content;
+    display: flex;
     margin: 0 auto;
+    background-image: url(images/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 2%;
 }
-.home h3 {
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight: 800;
+
+.homeTitle h1 {
+    text-align: justify;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    font-size: 4rem;
+    color: var(--gray);
+}
+
+.homeTitle {
+    margin-right: 3vw;
+}
+
+.homeTitle a {
+    background-color: #fff;
+    color: var(--primary);
+    padding: 2.2rem;
+    border-radius: 1rem;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.homeTitle a:hover {
+    background-color: var(--light-color);
+}
+
+.homeImage img {
+    height: 65vh;
+}
+
+/* css for our products */
+.products {
+    width: fit-content;
+    margin: 0 5vw;
     text-align: center;
 }
 
-.home  h3 span {
+.products h1 {
+    font-size: 4rem;
+    margin-bottom: 6vh;
+}
+
+.products span {
+    text-decoration: underline;
     color: var(--primary);
-    font-size: 2.5rem;
-    font-weight: 800;
-    padding-bottom: 1rem;
-    text-decoration: underline 3.5px;
-    /* tolong bantu style underline rounded border gabisa help */
-    
-    
+}
+
+.ourProducts {
+    display: flex;
+}
+
+.product {
+    background-color: white;
+    margin: 2%;
+    padding: 1.5%;
+    border-radius: 1rem;
+    height: fit-content;
+    -moz-box-shadow: inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow: inset 0 0 5px #000000;
+}
+
+.product img {
+    margin-bottom: 3vh;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 2px var(--light-color);
+}
+
+.productDescription {
+    display: inline-flex;
+    font-size: 2.2rem;
+    margin-bottom: 8vh;
+}
+
+.productDescription button {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: whitesmoke;
+    width: 1.1vw;
+    height: fit-content;
+    border-radius: 50%;
+    margin-left: 0.5vw;
+}
+
+.chooseNow {
+    margin-bottom: 5vh;
+}
+
+.chooseNow a {
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1vw 3vw;
+    border-radius: 1rem;
+    box-shadow: 0px 2px var(--light-color);
 }
