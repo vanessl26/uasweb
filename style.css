@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Livvic:wght@500&family=Roboto:wght@700&display=swap');
-
+/* default settings  */
 :root {
     --primary: #E25E20;
     --black: #130f40;
@@ -33,49 +33,27 @@ html {
 
 body {
     background: #eee;
+    margin: 15rem;
 }
 
-section {
-    padding: 2rem 9%;
+body h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 6vh;
 }
 
-#banner {
-    padding: 0;
+body h3 {
+    font-weight: bold;
+
 }
 
-.heading {
-    text-align: center;
-    padding: 2rem 0;
-    padding-bottom: 3rem;
-    font-size: 3.5rem;
-    color: var(--black);
+body span {
+    text-decoration: underline;
+    color: var(--primary);
 }
 
-.heading span {
-    background: var(--primary);
-    color: #fff;
-    display: inline-block;
-    padding: .5rem 3rem;
-    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-}
 
-.btn {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .8rem 3rem;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    border: .2rem solid var(--black);
-    color: var(--black);
-    cursor: pointer;
-    background: none;
-}
-
-.btn:hover {
-    background: var(--primary);
-    color: #fff;
-}
-
+/* --------------------------------------------------------------navbar css */
 .header {
     position: fixed;
     top: 0;
@@ -177,11 +155,12 @@ a:after {
     /* display: none; */
 }
 
-/* css for banner */
+/* --------------------------------------------------------------css for banner */
 .home {
     width: fit-content;
     display: flex;
     margin: 0 auto;
+    margin-top: 15rem;
     background-image: url(images/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -219,23 +198,14 @@ a:after {
     height: 65vh;
 }
 
-/* css for our products */
+/* --------------------------------------------------------------css for our products */
 .products {
     width: fit-content;
     margin: 0 5vw;
     text-align: center;
 }
 
-.products h1 {
-    font-weight: bold;
-    font-size: 4rem;
-    margin-bottom: 6vh;
-}
 
-.products span {
-    text-decoration: underline;
-    color: var(--primary);
-}
 
 .ourProducts {
     display: flex;
@@ -287,4 +257,61 @@ a:after {
     padding: 1vw 3vw;
     border-radius: 1rem;
     box-shadow: 0px 2px var(--light-color);
+}
+
+/* --------------------------------------------------------------css for about us  */
+.aboutus {
+    width: fit-content;
+    margin: 0 5vw;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#aboutusimg {
+    float: center;
+    width:  300px;
+    height: 230px;
+    object-fit: contain;
+}
+.aboutus h3 {
+    font-weight: bold;
+    margin-bottom: 4vh;
+    margin-top: 3rem;
+    color: var(--primary);
+}
+/* --------------------------------------------------------------css for testimony  */
+.testimony {
+    width: 90%;
+    margin: 0 5vw;
+    text-align: center;
+}
+h3 #namatesti{
+    font-weight: bold;
+color: black;
+}
+
+.testimony .testimg {
+    display:inline;
+}
+
+.testimony #testimg {
+    padding: 2rem;
+    width:  200px;
+    height: 200px;
+    object-fit: contain;
+
+}
+.testimony .testitext {
+    display:inline;
+    margin-top: 1rem;
+}
+
+
+.testimony .card{
+    border-radius: 20% 15%;
+    border-color: var(--primary);
+    border-width: 5px;
+    margin-bottom: 3rem;
+    padding: 2rem;
+
 }
