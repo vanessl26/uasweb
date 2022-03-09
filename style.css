@@ -453,3 +453,42 @@ h3 #namatesti {
     text-align: center;
     margin: 1rem;
 }
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.footerContent {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 3vh 0;
+    color: whitesmoke;
+    justify-content: space-between;
+}
+
+.footerContent h3 {
+    font-size: 2.5rem;
+}
+
+.footerContent p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.leftFooter {
+    width: 50%;
+}
+
+.leftFooter {
+    width: 40%;
+}
+
+.underline {
+    height: 0.3vh;
+    width: 15vw;
+    background-color: whitesmoke;
+    margin-bottom: 1vh;
+}
