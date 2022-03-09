@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Livvic:wght@500&family=Roboto:wght@700&display=swap');
+
 /* default settings  */
 :root {
     --primary: #E25E20;
@@ -51,7 +52,8 @@ body span {
     text-decoration: underline;
     color: var(--primary);
 }
-body .primary button  {
+
+body .primary button {
     font-size: 1.5rem;
     background-color: var(--primary);
     color: #fff;
@@ -215,18 +217,16 @@ a:after {
     text-align: center;
 }
 
-
-
 .ourProducts {
     display: flex;
 }
 
 .product {
     background-color: white;
-    margin: 2%;
+    height: 55vh;
+    margin: 0 2vw;
     padding: 1.5%;
     border-radius: 1rem;
-    height: fit-content;
     -moz-box-shadow: inset 0 0 5px #000000;
     -webkit-box-shadow: inset 0 0 5px #000000;
     box-shadow: inset 0 0 5px #000000;
@@ -242,7 +242,7 @@ a:after {
 .productDescription {
     display: inline-flex;
     font-size: 2.2rem;
-    margin-bottom: 8vh;
+    margin-bottom: 7vh;
 }
 
 .productDescription button {
@@ -256,10 +256,6 @@ a:after {
     margin-left: 0.5vw;
 }
 
-.chooseNow {
-    margin-bottom: 5vh;
-}
-
 .chooseNow button {
     font-size: 1.5rem;
     background-color: var(--primary);
@@ -267,6 +263,10 @@ a:after {
     padding: 1vw 3vw;
     border-radius: 1rem;
     box-shadow: 0px 2px var(--light-color);
+}
+
+.chooseNow button:hover {
+    background-color: var(--light-color);
 }
 
 /* --------------------------------------------------------------css for about us  */
@@ -279,10 +279,11 @@ a:after {
 
 #aboutusimg {
     float: center;
-    width:  300px;
+    width: 300px;
     height: 230px;
     object-fit: contain;
 }
+
 .aboutus h3 {
     font-weight: bold;
     margin-bottom: 4vh;
@@ -303,29 +304,31 @@ a:after {
     margin: 0 5vw;
     text-align: center;
 }
-h3 #namatesti{
+
+h3 #namatesti {
     font-weight: bold;
-color: black;
+    color: black;
 }
 
 .testimony .testimg {
-    display:inline;
+    display: inline;
 }
 
 .testimony #testimg {
     padding: 2rem;
-    width:  200px;
+    width: 200px;
     height: 200px;
     object-fit: contain;
 
 }
+
 .testimony .testitext {
-    display:inline;
+    display: inline;
     margin-top: 1rem;
 }
 
 
-.testimony .card{
+.testimony .card {
     border-radius: 20% 15%;
     border-color: var(--primary);
     border-width: 5px;
@@ -333,6 +336,7 @@ color: black;
     padding: 2rem;
 
 }
+
 /* ---------------pop up menu kanan  */
 .header .login-form {
     position: absolute;
@@ -380,71 +384,72 @@ color: black;
 }
 
 
-.header .shopping-cart{
+.header .shopping-cart {
     position: absolute;
-    top:110%; right:-110%;
-    padding:1rem;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    width:35rem;
+    width: 35rem;
     background: #fff;
 }
 
-.header .shopping-cart.active{
-    right:2rem;
+.header .shopping-cart.active {
+    right: 2rem;
     transition: .4s linear;
 }
 
-.header .shopping-cart .box{
+.header .shopping-cart .box {
     display: flex;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
     position: relative;
-    margin:1rem 0;
+    margin: 1rem 0;
 }
 
-.header .shopping-cart .box img{
-    height:10rem;
+.header .shopping-cart .box img {
+    height: 10rem;
 }
 
-.header .shopping-cart .box .fa-trash{
+.header .shopping-cart .box .fa-trash {
     font-size: 2rem;
     position: absolute;
-    top:50%; right:2rem;
+    top: 50%;
+    right: 2rem;
     cursor: pointer;
-    color:var(--light-color);
+    color: var(--light-color);
     transform: translateY(-50%);
 }
 
-.header .shopping-cart .box .fa-trash:hover{
-    color:var(--primary);
+.header .shopping-cart .box .fa-trash:hover {
+    color: var(--primary);
 }
 
-.header .shopping-cart .box .content h3{
-    color:var(--black);
+.header .shopping-cart .box .content h3 {
+    color: var(--black);
     font-size: 1.7rem;
     padding-bottom: 1rem;
 }
 
-.header .shopping-cart .box .content span{
-    color:var(--light-color);
+.header .shopping-cart .box .content span {
+    color: var(--light-color);
     font-size: 1.6rem;
 }
 
-.header .shopping-cart .box .content .quantity{
+.header .shopping-cart .box .content .quantity {
     padding-left: 1rem;
 }
 
-.header .shopping-cart .total{
+.header .shopping-cart .total {
     font-size: 2.5rem;
-    padding:1rem 0;
+    padding: 1rem 0;
     text-align: center;
-    color:var(--black);
+    color: var(--black);
 }
 
-.header .shopping-cart .btn{
+.header .shopping-cart .btn {
     display: block;
     text-align: center;
-    margin:1rem;
+    margin: 1rem;
 }
-
