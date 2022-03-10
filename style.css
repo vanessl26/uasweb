@@ -64,6 +64,13 @@ body .primary button {
 
 }
 
+.pagination{
+    width: 90%;
+    margin: 10rem auto;
+}
+
+
+
 
 /* --------------------------------------------------------------navbar css */
 .header {
