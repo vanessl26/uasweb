@@ -104,16 +104,10 @@ section {
 
     padding: 0;
     list-style: none;
-    display: table;
     width: 600px;
     text-align: center;
 }
 
-.header .navbar li {
-    display: table-cell;
-    position: relative;
-
-}
 
 
 .header .navbar a {
@@ -121,7 +115,7 @@ section {
     text-decoration: none;
     color: var(--black);
     display: inline-block;
-    padding: 5px 5px;
+    padding: 5px 16px;
     position: relative;
 }
 
@@ -169,7 +163,7 @@ a:after {
 }
 
 #menu-btn {
-    /* display: none; */
+    display: none;
 }
 
 /* --------------------------------------------------------------css for banner */
@@ -179,7 +173,7 @@ a:after {
     margin: 0 auto;
     margin-top: 9rem;
     margin-bottom: 2rem;
-    background-image: url(images/background.png);
+    background-image: url(images/home-background.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 2%;
@@ -197,25 +191,22 @@ a:after {
 
 .homeTitle {
     padding-right: 15vw;
+    margin-bottom: 25rem;
 }
 
 .homeTitle button {
     background-color: #fff;
     color: var(--primary);
-    padding: 2vw;
+    padding: 2vw 10vw;
     border-radius: 1rem;
     font-weight: bolder;
     font-size: 2.5rem;
-    margin-left: 15vw;
-    margin-top: 3vw;
+    margin-left: 10vw;
+    margin-top: 15vw;
 }
 
 .homeTitle button:hover {
     background-color: var(--light-color);
-}
-
-.homeImage img {
-    height: 87vh;
 }
 
 /* --------------------------------------------------------------css for our products */
@@ -500,4 +491,95 @@ h3 #namatesti {
     width: 15vw;
     background-color: whitesmoke;
     margin-bottom: 1vh;
+}
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+        margin-top: 85px;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .footer .box-container {
+    margin-left: 35px;
+    }
+
+    .next, .next-event {
+    position: relative;
+    float: right;
+    top: 26px;
+    left: -330px;
+    color: black;
+    border-radius: 3px 0 0 3px;
+    }
+
+    .prev, .prev-event {
+    position: relative;
+    top: 21px;
+    left: 300px;
+    color: black;
+    border-radius: 3px 0 0 3px;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .search-form {
+        width: 90%;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .box-container .box .payment-img {
+        margin: 2rem auto;
+    }
+
 }
