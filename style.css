@@ -174,11 +174,10 @@ a:after {
 
 /* --------------------------------------------------------------css for banner */
 .home {
-    width: 80%;
+    width: 75%;
     display: flex;
     margin: 0 auto;
-    margin-top: 9rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     background-image: url(images/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -187,7 +186,7 @@ a:after {
 
 .homeTitle h1 {
     font-weight: bold;
-    text-align: justify;
+    text-align: start;
     margin-top: 5vh;
     margin-left: 3vw;
     margin-bottom: 7vh;
@@ -202,7 +201,7 @@ a:after {
 .homeTitle button {
     background-color: #fff;
     color: var(--primary);
-    padding: 2vw;
+    padding: 1vw;
     border-radius: 1rem;
     font-weight: bolder;
     font-size: 2.5rem;
@@ -211,7 +210,10 @@ a:after {
 }
 
 .homeTitle button:hover {
-    background-color: var(--light-color);
+    background-color: var(--primary);
+    border: 3px solid white;
+    color: white;
+
 }
 
 .homeImage img {
@@ -266,7 +268,7 @@ a:after {
 }
 
 .chooseNow button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: var(--primary);
     color: #fff;
     padding: 0.8vw 1.5vw;
@@ -296,6 +298,7 @@ a:after {
 #aboutusimg {
     float: center;
     width: 300px;
+    padding: 3rem;
     height: 230px;
     object-fit: contain;
 }
@@ -303,13 +306,14 @@ a:after {
 .aboutus h3 {
     font-weight: bold;
     margin-bottom: 4vh;
-    margin-top: 3rem;
+
     color: var(--primary);
 }
 
 .aboutus h1 {
     font-weight: bold;
     font-size: 4rem;
+    margin-top: 2vh;
     margin-bottom: 1vh;
 }
 
