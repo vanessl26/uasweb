@@ -64,12 +64,9 @@ body .primary button {
 
 }
 
-.pagination{
-    width: 90%;
-    margin: 10rem auto;
+section {
+    padding: 5rem 9%;
 }
-
-
 
 
 /* --------------------------------------------------------------navbar css */
@@ -177,10 +174,11 @@ a:after {
 
 /* --------------------------------------------------------------css for banner */
 .home {
-    width: fit-content;
+    width: 80%;
     display: flex;
     margin: 0 auto;
-    margin-top: 15rem;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
     background-image: url(images/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -191,23 +189,25 @@ a:after {
     font-weight: bold;
     text-align: justify;
     margin-top: 5vh;
+    padding-left: 1vw;
     margin-bottom: 7vh;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--gray);
 }
 
 .homeTitle {
-    margin-right: 3vw;
+    padding-right: 15vw;
 }
 
 .homeTitle button {
     background-color: #fff;
     color: var(--primary);
-    padding: 2.2rem;
+    padding: 2vw;
     border-radius: 1rem;
     font-weight: bolder;
-    font-size: 3rem;
-    margin-left: 10vw;
+    font-size: 2.5rem;
+    margin-left: 15vw;
+    margin-top: 3vw;
 }
 
 .homeTitle button:hover {
@@ -215,10 +215,11 @@ a:after {
 }
 
 .homeImage img {
-    height: 65vh;
+    height: 87vh;
 }
 
 /* --------------------------------------------------------------css for our products */
+
 .products {
     width: fit-content;
     margin: 0 5vw;
