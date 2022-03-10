@@ -189,8 +189,9 @@ a:after {
     font-weight: bold;
     text-align: justify;
     margin-top: 5vh;
+    padding-left: 1vw;
     margin-bottom: 7vh;
-    font-size: 6rem;
+    font-size: 3.5rem;
     color: var(--gray);
 }
 
@@ -201,10 +202,10 @@ a:after {
 .homeTitle button {
     background-color: #fff;
     color: var(--primary);
-    padding: 2vw 6vw;
+    padding: 2vw;
     border-radius: 1rem;
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-left: 15vw;
     margin-top: 3vw;
 }
@@ -214,7 +215,7 @@ a:after {
 }
 
 .homeImage img {
-    height: 65vh;
+    height: 87vh;
 }
 
 /* --------------------------------------------------------------css for our products */
