@@ -176,7 +176,7 @@ a:after {
     display: flex;
     margin: 0 auto;
     margin-top: 2rem;
-    background-image: url(images/home-background.png);
+    background-image: url(images/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 2%;
