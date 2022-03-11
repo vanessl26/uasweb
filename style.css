@@ -68,10 +68,6 @@ section {
     padding: 5rem 9%;
 }
 
-.pagination{
-    width: 90%;
-    margin: 10rem auto;
-}
 
 /* --------------------------------------------------------------navbar css */
 .header {
@@ -194,7 +190,7 @@ a:after {
 
 .homeTitle {
     padding-right: 15vw;
-    margin-bottom: 15rem;
+    margin-bottom: 25rem;
 }
 
 .homeTitle button {
@@ -229,9 +225,9 @@ a:after {
 
 .product {
     background-color: white;
-    height: 100%;
-    margin: 2vh 2vw;
-    padding: 5%;
+    height: 45vh;
+    margin: 0 2vw;
+    padding: 1.5%;
     border-radius: 1rem;
     -moz-box-shadow: inset 0 0 5px #000000;
     -webkit-box-shadow: inset 0 0 5px #000000;
@@ -308,7 +304,7 @@ a:after {
 .aboutus h1 {
     font-weight: bold;
     font-size: 4rem;
-    margin-top: 4vh;
+    margin-top: 2vh;
     margin-bottom: 1vh;
 }
 
@@ -469,34 +465,39 @@ h3 #namatesti {
     margin: 1rem;
 }
 
-/* ------------------------footer */
-#footerkonten {
-    background: rgb(255,98,24);
-    background: linear-gradient(180deg, rgba(255,98,24,0.9465414325842697) 0%, rgba(255,131,72,0.8397998595505618) 100%);
+/* footer */
+.footer {
+    width: 100%;
+    background-color: var(--primary);
 }
-#footerkonten h3 {
+
+.footerContent {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 3vh 0;
+    color: whitesmoke;
+    justify-content: space-between;
+}
+
+.footerContent h3 {
     font-size: 2rem;
-    color: white;
-
 }
 
-#footerkonten p {
+.footerContent p {
     font-size: 1rem;
-    margin-top:2rem;
     text-align: justify;
-    color: white;
-    width: 80%;
 }
 
-#footerkonten hr {
-    height: 0.4vh;
-    width: 15vw;
-    color: white;
-    opacity: 100%;
-    margin-bottom: 1vh;
-
+.leftFooter {
+    width: 50%;
 }
 
+.leftFooter {
+    width: 40%;
+}
+
+<<<<<<< HEAD
 .formsimulate{
   height: 60vh;
 }
@@ -526,6 +527,14 @@ h3 #namatesti {
 
 }
 /* mediaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+=======
+.underline {
+    height: 0.3vh;
+    width: 15vw;
+    background-color: whitesmoke;
+    margin-bottom: 1vh;
+}
+>>>>>>> parent of 511ccd6 (rapih-rapih main page)
 
 @media (max-width:991px) {
 
