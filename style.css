@@ -398,7 +398,6 @@ h3 #namatesti {
     text-decoration: underline;
 }
 
-
 .header .shopping-cart {
     position: absolute;
     top: 110%;
@@ -406,7 +405,7 @@ h3 #namatesti {
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    width: 30vw;
+    width: 32.5vw;
     background: #fff;
 }
 
@@ -434,7 +433,7 @@ h3 #namatesti {
 .header .shopping-cart .box .fa-trash {
     font-size: 2rem;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 2rem;
     cursor: pointer;
     color: var(--light-color);
@@ -445,10 +444,27 @@ h3 #namatesti {
     color: var(--primary);
 }
 
+.header .shopping-cart .box .fa-heart {
+    position: absolute;
+    top: 34%;
+    font-size: 2rem;
+    color: #fb7181;
+    right: 5vw;
+    cursor: pointer;
+}
+
+.header .shopping-cart .box .fa-heart:hover {
+    color: var(--light-color);
+}
+
 .header .shopping-cart .box .content h3 {
     color: var(--black);
     font-size: 1.7rem;
     padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content ul {
+    list-style: none;
 }
 
 .header .shopping-cart .box .content span {
@@ -463,8 +479,26 @@ h3 #namatesti {
 }
 
 .header .shopping-cart .box .content .quantity {
-    /* padding-left: 1rem; */
     text-decoration: none;
+}
+
+.header .shopping-cart .box .content-2 {
+    margin-top: 5vh;
+}
+
+.header .shopping-cart .box .content .quantity ul {
+    list-style: none;
+    display: flex;
+    margin-left: 9vw;
+}
+
+.header .shopping-cart .box .content .quantity ul li {
+    padding: 0 0.8rem;
+    border: 1px solid var(--light-color);
+}
+
+.quantity .qty {
+    background-color: rgba(241, 112, 177, 0.4);
 }
 
 .header .shopping-cart .total {
