@@ -68,7 +68,7 @@ section {
     padding: 5rem 9%;
 }
 
-.pagination{
+.pagination {
     width: 90%;
     margin: 10rem auto;
 }
@@ -406,7 +406,7 @@ h3 #namatesti {
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    width: 35rem;
+    width: 30vw;
     background: #fff;
 }
 
@@ -425,6 +425,10 @@ h3 #namatesti {
 
 .header .shopping-cart .box img {
     height: 10rem;
+    border-radius: 1rem;
+    -moz-box-shadow: inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow: inset 0 0 5px #000000;
 }
 
 .header .shopping-cart .box .fa-trash {
@@ -450,10 +454,17 @@ h3 #namatesti {
 .header .shopping-cart .box .content span {
     color: var(--light-color);
     font-size: 1.6rem;
+    display: block;
+}
+
+.header .shopping-cart .box .content .price {
+    color: var(--primary);
+    text-decoration: none;
 }
 
 .header .shopping-cart .box .content .quantity {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
+    text-decoration: none;
 }
 
 .header .shopping-cart .total {
@@ -471,9 +482,10 @@ h3 #namatesti {
 
 /* ------------------------footer */
 #footerkonten {
-    background: rgb(255,98,24);
-    background: linear-gradient(180deg, rgba(255,98,24,0.9465414325842697) 0%, rgba(255,131,72,0.8397998595505618) 100%);
+    background: rgb(255, 98, 24);
+    background: linear-gradient(180deg, rgba(255, 98, 24, 0.9465414325842697) 0%, rgba(255, 131, 72, 0.8397998595505618) 100%);
 }
+
 #footerkonten h3 {
     font-size: 2rem;
     color: white;
@@ -482,7 +494,7 @@ h3 #namatesti {
 
 #footerkonten p {
     font-size: 1rem;
-    margin-top:2rem;
+    margin-top: 2rem;
     text-align: justify;
     color: white;
     width: 80%;
@@ -511,24 +523,26 @@ h3 #namatesti {
     }
 
     .footer .box-container {
-    margin-left: 35px;
+        margin-left: 35px;
     }
 
-    .next, .next-event {
-    position: relative;
-    float: right;
-    top: 26px;
-    left: -330px;
-    color: black;
-    border-radius: 3px 0 0 3px;
+    .next,
+    .next-event {
+        position: relative;
+        float: right;
+        top: 26px;
+        left: -330px;
+        color: black;
+        border-radius: 3px 0 0 3px;
     }
 
-    .prev, .prev-event {
-    position: relative;
-    top: 21px;
-    left: 300px;
-    color: black;
-    border-radius: 3px 0 0 3px;
+    .prev,
+    .prev-event {
+        position: relative;
+        top: 21px;
+        left: 300px;
+        color: black;
+        border-radius: 3px 0 0 3px;
     }
 
     section {
