@@ -86,7 +86,13 @@ h4 {
 }
 
 /* ----------------------------------------------------------------------checkout */
-
+.checkout{
+    width:60%;
+  margin: 0 auto;
+    text-align: center;
+    float: none;
+    
+}
 .pagination h1 {
     margin: 2rem auto;
 }
@@ -94,8 +100,9 @@ h4 {
 .formbox {
     background-color: white;
     height: 70vh;
+
     margin: 0 2vw;
-    padding: 1.5%;
+    padding: 3%;
     border-radius: 1rem;
     text-align: start;
     box-shadow: 0 0 5px #d4d0d0;
@@ -129,4 +136,8 @@ input {
     background-color: white;
     border: 3px solid var(--primary);
     color: var(--primary);
+}
+
+.inputType{
+    
 }
