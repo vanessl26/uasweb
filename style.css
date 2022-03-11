@@ -497,6 +497,34 @@ h3 #namatesti {
 
 }
 
+.formsimulate{
+  height: 60vh;
+}
+
+.control-group{
+  font-size: 28px;
+  display: flex;
+  margin: 3vw 8vw;
+}
+
+.control-group .control-label{
+  width: 250px;
+}
+
+.control-group .controls{
+  margin: 0 2vw;
+}
+
+.input-simulate{
+  padding-right: 400px;
+}
+
+.form-row .produkbutton {
+  margin: 0vw 31vw;
+  position: relative;
+
+
+}
 /* mediaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
 @media (max-width:991px) {

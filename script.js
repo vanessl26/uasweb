@@ -26,3 +26,36 @@ window.onload = function () {
         loginForm.classList.remove('active');
     }
 };
+
+function equalsIgnoringCase(text, other) {
+    return text.localeCompare(other, undefined, { sensitivity: 'base' }) === 0;
+}
+
+function simulate(){
+  var waktu1;
+  var waktu2;
+  var waktu3;
+
+  var jenisProduk = document.getElementById("jenisproduk").value;
+  var ukuran = document.getElementById("ukuran").value;
+  var jenisKertas = document.getElementById("jeniskertas").value;
+  var jumlahCetakan = document.getElementById("jumlahcetakan").value;
+
+  switch (jenisproduk) {
+    case paper:
+
+      break;
+    case paper:
+
+      break;
+    case paper:
+
+      break;
+    case paper:
+
+      break;
+    default:
+
+  }
+
+}
