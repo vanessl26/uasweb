@@ -69,8 +69,29 @@ section {
 }
 
 .pagination{
-    width: 90%;
+    width: 100%;
     margin: 10rem auto;
+}
+
+#exampleModal{
+    display: 'flex';
+	justify-content: 'center';
+	align-items: 'center';
+}
+
+#inputdropdown{
+ padding: 1rem 1rem;
+ opacity: 50%;
+ margin-left: 1rem;
+ margin-right: 1rem;
+ background-color: var(--primary);
+ margin-bottom: 1rem;
+}
+
+h4{
+    color: var(--primary);
+    font-weight: bolder;
+    margin: 0 2rem;
 }
 
 /* --------------------------------------------------------------navbar css */
@@ -86,7 +107,6 @@ section {
     padding: 2rem 9%;
     background: #fff;
     box-shadow: var(--box-shadow);
-
 }
 
 .header .logo {
