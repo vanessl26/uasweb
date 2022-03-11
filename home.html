@@ -30,11 +30,11 @@
 
         <nav class="navbar">
             <ul>
-                <a href="#up">Home</a>
-                <a href="#products">Product</a>
-                <a href="#testimony">Testimony</a>
+                <a href="home.html#up">Home</a>
+                <a href="home.html#products">Product</a>
+                <a href="home.html#testimony">Testimony</a>
                 <a href="#">Simulation</a>
-                <a href="#aboutus">About Us</a>
+                <a href="home.html#aboutus">About Us</a>
             </ul>
         </nav>
 
@@ -75,10 +75,9 @@
                 </div>
             </div>
 
-            <div class="total"> total : $19.69/- </div>
-            <button class="btn" style="width: 10rem; margin: 0 auto;color:white; background-color: var(--primary);"
-                type="button">
-                Check Out</button>
+            <a style="text-decoration: none;" href="checkout.html"><button class="btn"
+                    style=" width: 10rem; margin: 0 auto;color:white; background-color: var(--primary);"
+                    type="button">Check Out</button></a>
         </div>
 
 
@@ -102,53 +101,66 @@
     <section class="products" id="products">
         <h1>Our Digital Printing <span>Product</span></h1>
         <br>
-        <div class="ourProducts">
-            <div class="product one">
-                <img src="images/pdk_paper.png" alt="">
-                <div class="productDescription">
-                    <p>PAPER</p>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        i
-                    </button>
-                </div>
-                <div class="chooseNow">
-                    <button>CHOOSE NOW</button>
-                </div>
-            </div>
-            <div class="product two">
-                <img src="images/pdk_stiker.png" alt="">
-                <div class="productDescription">
-                    <p>STICKERS</p>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        i
-                    </button>
-                </div>
-                <div class="chooseNow">
-                    <button> <a href="product.html" style="color:inherit"> Choose Now</a></button>
+        <div class="row">
+
+            <!-- <div class="ourProducts"> -->
+            <div class="col-sm-3">
+                <div class="product one">
+                    <img src="images/pdk_paper.png" alt="">
+                    <div class="productDescription">
+                        <p>PAPER</p>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            i
+                        </button>
+                    </div>
+                    <div class="chooseNow">
+                        <button>CHOOSE NOW</button>
+                    </div>
                 </div>
             </div>
-            <div class="product three">
-                <img src="images/pdk_banner.png" alt="">
-                <div class="productDescription">
-                    <p>LARGE FORMAT</p>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        i
-                    </button>
+
+            <div class="col-sm-3">
+                <div class="product two">
+                    <img src="images/pdk_stiker.png" alt="">
+                    <div class="productDescription">
+                        <p>STICKERS</p>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            i
+                        </button>
+                    </div>
+                    <div class="chooseNow">
+                        <button> <a href="product.html" style="color:inherit"> Choose Now</a></button>
+                    </div>
                 </div>
-                <div class="chooseNow">
-                    <button>CHOOSE NOW</button>
+
+            </div>
+
+            <div class="col-sm-3">
+                <div class="product three">
+                    <img src="images/pdk_banner.png" alt="">
+                    <div class="productDescription">
+                        <p>LARGE FORMAT</p>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            i
+                        </button>
+                    </div>
+                    <div class="chooseNow">
+                        <button>CHOOSE NOW</button>
+                    </div>
                 </div>
             </div>
-            <div class="product four">
-                <img src="images/pdk_kemasan.png" alt="">
-                <div class="productDescription">
-                    <p>PRODUCT</p>
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        i
-                    </button>
-                </div>
-                <div class="chooseNow">
-                    <button type="button">CHOOSE NOW</button>
+            <div class="col-sm-3">
+                <div class="product four">
+                    <img src="images/pdk_kemasan.png" alt="">
+                    <div class="productDescription">
+                        <p>PRODUCT</p>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            i
+                        </button>
+                    </div>
+                    <div class="chooseNow">
+                        <button type="button">CHOOSE NOW</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -256,29 +268,53 @@
         </div>
     </div>
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="footerContent">
-            <div class="leftFooter">
-                <h3>Tentang</h3>
-                <div class="underline"></div>
-                <p>Kami ngeprint blablabla Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami
-                    ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami
-                    ngeprint
-                    blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint
-                    blablabla
-                    Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami
-                    ngeprint blablabla</p>
+
+    <footer class="text-lg-start text-muted" id="footerkonten">
+        <section class="">
+            <div class="container text-center text-md-start ">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-9 ">
+                        <!-- Content -->
+                        <h3 class=" fw-bold mb-4">
+                            Tentang
+                        </h3>
+                        <hr>
+
+                        <p>
+                            Kami ngeprint blablabla Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint
+                            blablabla Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami
+                            ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami ngeprint
+                            blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami
+                            ngeprint blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami ngeprint
+                            blablabla
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-3">
+                        <!-- Links -->
+                        <h3 class=" fw-bold mb-4">
+                            Hubungi Kami
+                        </h3>
+                        <hr>
+
+                        <p><i class="fas fa-home me-3"></i> Gedung ABC, Jalan Sunter Mas Tengah, Sunter Jaya, Tj. Priok,
+                            Kota Jkt Utara</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            help@ngeprint.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i>021-8888-777</p>
+
+                    </div>
+                </div>
             </div>
-            <div class="rightFooter">
-                <h3>Hubungi Kami</h3>
-                <div class="underline"></div>
-                <p>Gedung ABC, Jalan Sunter Mas Tengah, Sunter Jaya, Tj. Priok, Kota Jkt Utara</p>
-                <p>Telepon:<br>021-8888-777</p>
-                <p>Email:<br>help@ngeprint.com</p>
-            </div>
-        </div>
+        </section>
     </footer>
+
+
 </body>
 
 </html>
