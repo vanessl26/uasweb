@@ -30,11 +30,11 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="home.html#products">Product</a></li>
-                <li><a href="home.html#testimony">Testimony</a></li>
-                <li><a href="#">Simulation</a></li>
-                <li><a href="home.html#aboutus">About Us</a></li>
+                <a href="home.html#up">Home</a>
+                <a href="home.html#products">Product</a>
+                <a href="home.html#testimony">Testimony</a>
+                <a href="#">Simulation</a>
+                <a href="home.html#aboutus">About Us</a>
             </ul>
         </nav>
 
@@ -43,6 +43,7 @@
             <div class="fas fa-shopping-cart" id="shop-btn"></div>
             <div class="fas fa-user" id="login-btn"></div>
         </div>
+
 
 
 
@@ -75,7 +76,6 @@
                 </div>
             </div>
 
-            <div class="total"> total : $19.69/- </div>
             <a style="text-decoration: none;" href="checkout.html"><button class="btn"
                     style=" width: 10rem; margin: 0 auto;color:white; background-color: var(--primary);"
                     type="button">Check Out</button></a>
@@ -96,25 +96,40 @@
                     </div>
                     <br>
                     <h3>Business Card</h3>
+                    <br>
                     <form>
                         <div class="form-group">
-                            <h4>Nama Pengirim:</h4>
-                            <input type="text" class="form-control" id="name" name="name">
+                            <h4>Pilih Jenis Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <select id="inputdropdown" class="form-control">
+                                    <option selected>Matte</option>
+                                    <option>Glossy</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <h4>E-Mail:</h4>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <h4>Ukuran Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <select id="inputdropdown" class="form-control">
+                                    <option selected>A4</option>
+                                    <option>A5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h4>Jumlah Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <input type="number" class="form-control" id="jumlahp" name="name">
+                            </div>
+                        </div>
 
-                        </div>
-                        <div class="form-group">
-                            <h4>Pesan:</h4>
-                            <textarea class="form-control" rows="5" id="message" name="pesan"
-                                style="font-family: monospace;"></textarea>
+                        <div class="produkbutton">
+                            <button type="button">ADD TO CART</button>
                         </div>
                     </form>
                 </div>
             </div>
-
+            <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
             <div class="col-sm-4">
                 <div class="jenis">
                     <div class="card-img-top  align-items-center">
@@ -125,25 +140,40 @@
                     </div>
                     <br>
                     <h3>Business Card</h3>
+                    <br>
                     <form>
                         <div class="form-group">
-                            <h4>Nama Pengirim:</h4>
-                            <input type="text" class="form-control" id="name" name="name">
+                            <h4>Pilih Jenis Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <select id="inputdropdown" class="form-control">
+                                    <option selected>Matte</option>
+                                    <option>Glossy</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <h4>E-Mail:</h4>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <h4>Ukuran Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <select id="inputdropdown" class="form-control">
+                                    <option selected>A4</option>
+                                    <option>A5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h4>Jumlah Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <input type="number" class="form-control" id="jumlahp" name="name">
+                            </div>
+                        </div>
 
-                        </div>
-                        <div class="form-group">
-                            <h4>Pesan:</h4>
-                            <textarea class="form-control" rows="5" id="message" name="pesan"
-                                style="font-family: monospace;"></textarea>
+                        <div class="produkbutton">
+                            <button type="button">ADD TO CART</button>
                         </div>
                     </form>
                 </div>
             </div>
-
+            <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
             <div class="col-sm-4">
                 <div class="jenis">
                     <div class="card-img-top  align-items-center">
@@ -154,119 +184,167 @@
                     </div>
                     <br>
                     <h3>Business Card</h3>
+                    <br>
                     <form>
                         <div class="form-group">
-                            <h4>Nama Pengirim:</h4>
-                            <input type="text" class="form-control" id="name" name="name">
+                            <h4>Pilih Jenis Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <select id="inputdropdown" class="form-control">
+                                    <option selected>Matte</option>
+                                    <option>Glossy</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <h4>E-Mail:</h4>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <h4>Ukuran Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <select id="inputdropdown" class="form-control">
+                                    <option selected>A4</option>
+                                    <option>A5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h4>Jumlah Kertas</h4>
+                            <div class="form-group col-md-11">
+                                <input type="number" class="form-control" id="jumlahp" name="name">
+                            </div>
+                        </div>
 
-                        </div>
-                        <div class="form-group">
-                            <h4>Pesan:</h4>
-                            <textarea class="form-control" rows="5" id="message" name="pesan"
-                                style="font-family: monospace;"></textarea>
+                        <div class="produkbutton">
+                            <button type="button">ADD TO CART</button>
                         </div>
                     </form>
                 </div>
             </div>
-<<<<<<< Updated upstream
-
-
-
-=======
         </div>
 
-<<<<<<< HEAD
+
+
         <div class="simulation" id="">
             <h1>Not Sure it’s easy and fast?<br>
                 <span>SIMULATE IT!</span>
             </h1>
 
             <div class="formsimulate">
+                <h4><b>Informasi Pembeli</b></h4>
                 <form>
                     <div class="form-row">
                         <form class="form-horizontal">
                             <div class="control-group">
-                                <label class="control-label" for="inputType">Jenis Produk</label>
+                                <label class="control-label" for="inputType">Type</label>
                                 <div class="controls">
-                                    <input type="text" class="input-simulate" id="jenisproduk" placeholder="Paper - Brosur ">
+                                    <input type="text" id="inputType" placeholder="Type">
                                 </div>
                             </div>
+
 
                             <div class="control-group">
-                                <label class="control-label" for="inputType">Ukuran</label>
-                                <div class="controls">
-                                    <input type="text" class="input-simulate" id="ukuran" placeholder="A4">
+                                <span class="control-label">Metadata</span>
+                                <div class="controls form-inline">
+                                    <label for="inputKey">Key</label>
+                                    <input type="email" id="inputEmail4" placeholder="Email">
+                                    <label for="inputValue">Value</label>
+                                    <input type="password" class="input-small" placeholder="Value" id="inputValue">
                                 </div>
                             </div>
-
-                            <div class="control-group">
-                                <label class="control-label" for="inputType">Jenis Kertas</label>
-                                <div class="controls">
-                                    <input type="text" class="input-simulate" id="jeniskertas" placeholder="Vinyl">
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label class="control-label" for="inputType">Jumlah Cetakan</label>
-                                <div class="controls">
-                                    <input type="text" class="input-simulate" id="jumlahcetakan" placeholder="300 RIM">
-                                </div>
-                            </div>
-
 
 
                         </form>
+
+                        <div class="form-group col-md-5">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputPassword4">No Telpon</label>
+                            <input type="number" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="inputCity">City</label>
+                            <input type="text" style="width: 50%;" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4" style="float:right">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
                         <!-- <div class="form-group col-md-6">
                             <label for="inputZip">Zip</label>
                             <input type="text" class="form-control" id="inputZip">
 
                         </div> -->
->>>>>>> Stashed changes
+                    </div>
 
-                        <div class="produkbutton">
-                            <button type="button">ADD TO CART</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <footer class="text-lg-start text-muted" id="footerkonten">
+            <section class="">
+                <div class="container text-center text-md-start ">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-9 ">
+                            <!-- Content -->
+                            <h3 class=" fw-bold mb-4">
+                                Tentang
+                            </h3>
+                            <hr>
+
+                            <p>
+                                Kami ngeprint blablabla Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint
+                                blablabla Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami
+                                ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami ngeprint
+                                blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami
+                                ngeprint blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami ngeprint
+                                blablabla
+                            </p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <div class="col-md-3">
+                            <!-- Links -->
+                            <h3 class=" fw-bold mb-4">
+                                Hubungi Kami
+                            </h3>
+                            <hr>
+
+                            <p><i class="fas fa-home me-3"></i> Gedung ABC, Jalan Sunter Mas Tengah, Sunter Jaya, Tj.
+                                Priok,
+                                Kota Jkt Utara</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                help@ngeprint.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i>021-8888-777</p>
+
                         </div>
                     </div>
-                </form>
-            </div>
-=======
->>>>>>> parent of 511ccd6 (rapih-rapih main page)
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <!-- footer -->
-    <footer class="footer">
-        <div class="footerContent">
-            <div class="leftFooter">
-                <h3>Tentang</h3>
-                <div class="underline"></div>
-                <p>Kami ngeprint blablabla Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami
-                    ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami
-                    ngeprint
-                    blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint
-                    blablabla
-                    Kami ngeprint blablablaKami ngeprint blablabla Kami ngeprint blablabla Kami ngeprint blablablaKami
-                    ngeprint blablabla</p>
-            </div>
-            <div class="rightFooter">
-                <h3>Hubungi Kami</h3>
-                <div class="underline"></div>
-                <p>Gedung ABC, Jalan Sunter Mas Tengah, Sunter Jaya, Tj. Priok, Kota Jkt Utara</p>
-                <p>Telepon:<br>021-8888-777</p>
-                <p>Email:<br>help@ngeprint.com</p>
-            </div>
-        </div>
-    </footer>
+                </div>
+            </section>
+        </footer>
 </body>
 
 </html>

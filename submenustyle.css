@@ -1,10 +1,9 @@
 /* menu pilproduk */
 .pilproduk{
-    width: 90%;
-    margin: 0 5vw;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 12rem;
-    
+    margin-top: 12rem;    
 }
  .jenis {
     background-color: white;
@@ -31,14 +30,59 @@
 }
 
 
-#cardpilproduk{
-    
-}
-
 h4{
     text-align: start;
     font-weight: 900;
 }
+#jumlahp{
+    padding: 1rem 1rem;
+    opacity: 50%;
+   margin: 0.4rem 1rem;
+    background-color: var(--primary);
+   
+   }
+
+/* -----------------------menu simulation */
+.simulation{
+    margin: 3rem 5vh;
+    padding-top: 3rem;
+}
+
+.formsimulate{
+    background-color: white;
+    height: 55vh;
+    margin: 0 2vw;
+    padding: 1.5%;
+    border-radius: 1rem;
+    text-align: start;
+    border: var(--primary);
+    box-shadow:  0 0 5px #d4d0d0;
+}
+
+.produkbutton button {
+    font-size: 1.2rem;
+    background-color: white;
+    border: 3px solid var(--primary);
+    color: var(--primary);
+    padding: 1vw 8vw;
+    border-radius: 1rem;
+    margin: 2.5rem auto;
+  
+   
+}
+
+.produkbutton button a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.produkbutton button:hover {
+ background-color: var(--primary);
+    color: #fff;
+ 
+    box-shadow: 0px 2px var(--light-color);
+}
+
 /* ----------------------------------------------------------------------checkout */
 
 .pagination h1{
@@ -51,7 +95,28 @@ h4{
     margin: 0 2vw;
     padding: 1.5%;
     border-radius: 1rem;
+    text-align: start;
  
     box-shadow:  0 0 5px #d4d0d0;
 }
+label{
+    text-align: start;
+}
+
+input{
+    border: solid 1px var(--primary);
+    border-radius: 5px;
+    background-color:  rgb(247,212,195);
+    opacity: 70%;
+    padding-left: 1rem;
+    color: #000000;
+
+    font-weight: 500;
+ 
+   
+ 
+
+ 
+}
+
 
