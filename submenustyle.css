@@ -228,3 +228,43 @@ input {
 	display: inline-block;
 	margin: 100px auto;
 }
+/* -----------------------------------------------qoutation ------------*/
+.headerq{
+    display: inline-block;
+
+}
+
+.quotationjudul{
+    font-weight: bold;
+    width: 50%;
+    float: right;
+    color: var(--primary);
+    font-size: 3.5rem;
+}
+
+#logoq{
+    width: 30%;
+    height: 10%;
+}
+
+/* .isiq{
+
+} */
+
+hr.new3 {
+    border-top: 3px dotted var(--primary);
+    opacity: 100%;
+    background-color: white;
+}
+
+
+.noorder{
+margin-top: 3rem;
+font-weight: bold;
+}
+.judulisi{
+    margin: 2rem 0;
+    font-weight: bold;
+    color: var(--primary);
+
+    }
