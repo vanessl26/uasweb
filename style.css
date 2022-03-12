@@ -546,6 +546,8 @@ h3 #namatesti {
     margin: 1rem;
 }
 
+/* ------------------------simulate */
+
 .formsimulate{
   height: 80vh;
   border: 2px solid var(--primary);
@@ -572,6 +574,18 @@ h3 #namatesti {
 .form-row .produkbutton {
   margin: 0vw 31vw;
   position: relative;
+}
+
+#resulthours h2 {
+  font-size: 5rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.img-simulate{
+  margin-top: 35px;
+  width: 30%;
+  margin-left: 100px;
 }
 
 /* ------------------------footer */
