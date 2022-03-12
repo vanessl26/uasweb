@@ -546,6 +546,33 @@ h3 #namatesti {
     margin: 1rem;
 }
 
+.formsimulate{
+  height: 60vh;
+}
+
+.control-group{
+  font-size: 28px;
+  display: flex;
+  margin: 3vw 8vw;
+}
+
+.control-group .control-label{
+  width: 250px;
+}
+
+.control-group .controls{
+  margin: 0 2vw;
+}
+
+.input-simulate{
+  padding-right: 400px;
+}
+
+.form-row .produkbutton {
+  margin: 0vw 31vw;
+  position: relative;
+}
+
 /* ------------------------footer */
 #footerkonten {
     background: rgb(255, 98, 24);
