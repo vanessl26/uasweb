@@ -547,7 +547,8 @@ h3 #namatesti {
 }
 
 .formsimulate{
-  height: 60vh;
+  height: 80vh;
+  border: 2px solid var(--primary);
 }
 
 .control-group{
