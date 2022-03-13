@@ -7,14 +7,17 @@ window.onload = function () {
         registform.classList.remove('active');
         navbar.classList.remove('active');
         forgetpass.classList.remove('active');
+        shoppingCart.classList.remove('active');
     }
 
     let shoppingCart = document.querySelector('.shopping-cart');
 
     document.querySelector('#shop-btn').onclick = () => {
         shoppingCart.classList.toggle('active');
-        navbar.classList.remove('active');
         loginForm.classList.remove('active');
+        registform.classList.remove('active');
+        navbar.classList.remove('active');
+        forgetpass.classList.remove('active');
 
     }
 
@@ -32,6 +35,8 @@ window.onload = function () {
         loginForm.classList.remove('active');
         registform.classList.toggle('active');
         navbar.classList.remove('active');
+        shoppingCart.classList.remove('active');
+        forgetpass.classList.remove('active');
 
     }
 
@@ -41,6 +46,10 @@ window.onload = function () {
         registform.classList.remove('active');
         loginForm.classList.toggle('active');
         navbar.classList.remove('active');
+        forgetpass.classList.remove('active');
+        shoppingCart.classList.remove('active');
+
+
     }
 
     let forgetpass = document.querySelector('.forget-form');
@@ -50,6 +59,7 @@ window.onload = function () {
         loginForm.classList.remove('active');
         forgetpass.classList.toggle('active');
         navbar.classList.remove('active');
+        shoppingCart.classList.remove('active');
     }
 
 
