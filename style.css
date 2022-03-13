@@ -68,39 +68,40 @@ section {
     padding: 5rem 9%;
 }
 
-.pagination{
+.pagination {
     width: 100%;
     margin: 10rem auto;
 }
 
-#exampleModal{
+#exampleModal {
     display: 'flex';
-	justify-content: 'center';
-	align-items: 'center';
+    justify-content: 'center';
+    align-items: 'center';
 }
 
-#inputdropdown{
- padding: 1rem 1rem;
- opacity: 50%;
-margin: 0.4rem 1rem;
-font-weight: bolder;
- background-color: var(--primary);
- appearance: auto;
+#inputdropdown {
+    padding: 1rem 1rem;
+    opacity: 50%;
+    margin: 0.4rem 1rem;
+    font-weight: bolder;
+    background-color: var(--primary);
+    appearance: auto;
 
 }
 
 #inputdropdown ::after {
 
     font-size: 0.8rem;
-    pointer-events: none; /* ▼ click triggers dropdown */
+    pointer-events: none;
+    /* ▼ click triggers dropdown */
     position: absolute;
     right: 0.2rem;
     top: 0.3rem;
     z-index: 1;
-  }
+}
 
 
-h4{
+h4 {
     color: var(--primary);
     font-weight: bolder;
     margin: 0 2rem;
@@ -131,7 +132,6 @@ h4{
     width: 170px;
 }
 
-
 .header .logo i {
     color: var(--primary);
 }
@@ -143,8 +143,6 @@ h4{
     width: 600px;
     text-align: center;
 }
-
-
 
 .header .navbar a {
     font-size: 1.8rem;
@@ -734,44 +732,44 @@ h3 #namatesti {
 
 /* ------------------------simulate */
 
-.formsimulate{
-  height: 80vh;
-  border: 2px solid var(--primary);
+.formsimulate {
+    height: 80vh;
+    border: 2px solid var(--primary);
 }
 
-.control-group{
-  font-size: 28px;
-  display: flex;
-  margin: 3vw 8vw;
+.control-group {
+    font-size: 28px;
+    display: flex;
+    margin: 3vw 8vw;
 }
 
-.control-group .control-label{
-  width: 250px;
+.control-group .control-label {
+    width: 250px;
 }
 
-.control-group .controls{
-  margin: 0 2vw;
+.control-group .controls {
+    margin: 0 2vw;
 }
 
-.input-simulate{
-  padding-right: 400px;
+.input-simulate {
+    padding-right: 400px;
 }
 
 .form-row .produkbutton {
-  margin: 0vw 31vw;
-  position: relative;
+    margin: 0vw 31vw;
+    position: relative;
 }
 
 #resulthours h2 {
-  font-size: 5rem;
-  color: var(--primary);
-  font-weight: bold;
+    font-size: 5rem;
+    color: var(--primary);
+    font-weight: bold;
 }
 
-.img-simulate{
-  margin-top: 35px;
-  width: 30%;
-  margin-left: 100px;
+.img-simulate {
+    margin-top: 35px;
+    width: 30%;
+    margin-left: 100px;
 }
 
 /* ------------------------footer */
