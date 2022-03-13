@@ -4,10 +4,10 @@ window.onload = function () {
 
     document.querySelector('#login-btn').onclick = () => {
         loginForm.classList.toggle('active');
-        shoppingCart.classList.remove('active');
+        registform.classList.remove('active');
         navbar.classList.remove('active');
+        forgetpass.classList.remove('active');
     }
-
 
     let shoppingCart = document.querySelector('.shopping-cart');
 
@@ -25,6 +25,37 @@ window.onload = function () {
         shoppingCart.classList.remove('active');
         loginForm.classList.remove('active');
     }
+
+    let registform = document.querySelector('.regist-form');
+
+    document.querySelector('#regist-btn').onclick = () => {
+        loginForm.classList.remove('active');
+        registform.classList.toggle('active');
+        navbar.classList.remove('active');
+
+    }
+
+
+
+    document.querySelector('#login-regist-btn').onclick = () => {
+        registform.classList.remove('active');
+        loginForm.classList.toggle('active');
+        navbar.classList.remove('active');
+    }
+
+    let forgetpass = document.querySelector('.forget-form');
+
+    document.querySelector('#forget-btn').onclick = () => {
+        registform.classList.remove('active');
+        loginForm.classList.remove('active');
+        forgetpass.classList.toggle('active');
+        navbar.classList.remove('active');
+    }
+
+
+
+
+
 };
 
 function equalsIgnoringCase(text, other) {
