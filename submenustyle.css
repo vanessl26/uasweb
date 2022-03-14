@@ -139,7 +139,7 @@ input {
     color: var(--primary);
 }
 
-.inputType {}
+
 
 #dropdowncheckout {
     padding: 1rem 1rem;
@@ -242,7 +242,7 @@ input {
     margin: 100px auto;
 }
 
-/* -----------------------------------------------qoutation ------------*/
+/* -----------------------------------------------invoice ------------*/
 .headerq {
     display: inline-block;
 
