@@ -24,16 +24,14 @@
 
 <body>
     <header class="header">
-
         <a href="#" class="logo"><img src="images/logo_landscape.png" alt=""> </a>
-
 
         <nav class="navbar">
             <ul>
                 <a href="home.html#up">Home</a>
                 <a href="home.html#products">Product</a>
                 <a href="home.html#testimony">Testimony</a>
-                <a href="product.html#simulate">Simulation</a>
+                <a href="paperproduct.html#simulate">Simulation</a>
                 <a href="home.html#aboutus">About Us</a>
             </ul>
         </nav>
@@ -44,18 +42,43 @@
             <div class="fas fa-user" id="login-btn"></div>
         </div>
 
-
-
-
         <form action="" class="login-form">
             <h3>login now</h3>
             <input type="email" placeholder="your email" class="box">
             <input type="password" placeholder="your password" class="box">
-            <p>forget your password <a href="#">click here</a></p>
-            <p>don't have an account <a href="#">create now</a></p>
-            <button class="btn" style="width: 10rem; color:white; background-color: var(--primary);" type="button">Login
+            <p>forget your password <a id="forget-btn" style="text-decoration: underline;">click here</a></p>
+            <p>don't have an account <a id="regist-btn" style="text-decoration: underline;">create now</a></p>
+
+            <button class=" btn" style="width: 10rem; color:white; background-color: var(--primary);"
+                type="button">Login
                 In</button>
         </form>
+
+        <form action="" class="regist-form">
+            <h3>Register now</h3>
+            <input type="name" placeholder="your name" class="box">
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+
+            <p>have an account? <a id="login-regist-btn">login now</a></p>
+
+            <button class="btn" id="login-regist-btn"
+                style="width: 10rem; color:white; background-color: var(--primary);" type="button">Create Account
+            </button>
+        </form>
+
+        <form action="" class="forget-form">
+            <h3>Change Password</h3>
+            <input type="name" placeholder="your email" class="box">
+            <input type="password" placeholder="your new password" class="box">
+            <br>
+            <br>
+            <button class="btn" id="login-regist-btn"
+                style="width: 10rem; color:white; background-color: var(--primary);" type="button">Change Password
+            </button>
+        </form>
+
+
         <div class="shopping-cart">
             <div class="box">
                 <i class="fas fa-heart"></i>
@@ -67,7 +90,6 @@
                         <p>Box Packing</p>
                         <p>Duplex</p>
                         <p>Medium</p>
-                        <!-- <span class="quantity">qty : 1</span> -->
                         <div class="quantity">
                             <ul>
                                 <li>-</li>
@@ -89,7 +111,6 @@
                         <p>Box Packing</p>
                         <p>Duplex</p>
                         <p>Medium</p>
-                        <!-- <span class="quantity">qty : 1</span> -->
                         <div class="quantity">
                             <ul>
                                 <li>-</li>
@@ -110,7 +131,7 @@
     <!-- header done----------------------------------------------------------------------------------------------------------- -->
 
     <div class="pilproduk" id="">
-        <h1>Our <span>Paper</span> Digital Printing Product</h1>
+        <h1>Our <span>Stickers</span> Digital Printing Product</h1>
         <div class="row">
             <div class="col-sm-4">
                 <div class="jenis">
@@ -246,9 +267,10 @@
         </div>
 
 
-        <div class="simulation" id="simulate">
-          <br>
-          <br>
+
+
+
+        <div class="simulation" id="">
             <h1>Not Sure it’s easy and fast?<br>
                 <span>SIMULATE IT!</span>
             </h1>
