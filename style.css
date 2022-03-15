@@ -744,15 +744,16 @@ h3 #namatesti {
 }
 
 .control-group .control-label {
-    width: 250px;
+    width: 20%;
 }
 
 .control-group .controls {
     margin: 0 2vw;
+    width: 50%;
 }
 
 .input-simulate {
-    padding-right: 400px;
+  width: 150%;
 }
 
 .form-row .produkbutton {
@@ -872,6 +873,9 @@ h3 #namatesti {
         font-size: 2rem;
         margin: 2rem 2.5rem;
         display: block;
+
+    }.control-group .control-label{
+      font-size: 18px;
     }
 
 }
@@ -892,6 +896,23 @@ h3 #namatesti {
 
     .footer .box-container .box .payment-img {
         margin: 2rem auto;
+    }
+
+    .control-group .control-label{
+      font-size: 15px;
+      margin: 0 3vw;
+    }
+
+    .form-row .produkbutton{
+      margin: 0vw 25vw;
+    }
+
+    .input-simulate{
+      font-size: 20px;
+    }
+
+    .formsimulate {
+    height: 50vh;
     }
 
 }
