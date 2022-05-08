@@ -10,15 +10,12 @@
     <link rel="stylesheet" href="submenustyle.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
 </head>
 
@@ -28,14 +25,13 @@
 
         <nav class="navbar">
             <ul>
-                <a href="home.html#up">Home</a>
-                <a href="home.html#products">Product</a>
-                <a href="home.html#testimony">Testimony</a>
-                <a href="paperproduct.html#simulate">Simulation</a>
-                <a href="home.html#aboutus">About Us</a>
+                <a href="home.php#up">Home</a>
+                <a href="home.php#products">Product</a>
+                <a href="home.php#testimony">Testimony</a>
+                <a href="paperproduct.php#simulate">Simulation</a>
+                <a href="home.php#aboutus">About Us</a>
             </ul>
         </nav>
-
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-shopping-cart" id="shop-btn"></div>
@@ -49,8 +45,7 @@
             <p>forget your password <a id="forget-btn" style="text-decoration: underline;">click here</a></p>
             <p>don't have an account <a id="regist-btn" style="text-decoration: underline;">create now</a></p>
 
-            <button class=" btn" style="width: 10rem; color:white; background-color: var(--primary);"
-                type="button">Login
+            <button class=" btn" style="width: 10rem; color:white; background-color: var(--primary);" type="button">Login
                 In</button>
         </form>
 
@@ -62,8 +57,7 @@
 
             <p>have an account? <a id="login-regist-btn">login now</a></p>
 
-            <button class="btn" id="login-regist-btn"
-                style="width: 10rem; color:white; background-color: var(--primary);" type="button">Create Account
+            <button class="btn" id="login-regist-btn" style="width: 10rem; color:white; background-color: var(--primary);" type="button">Create Account
             </button>
         </form>
 
@@ -73,8 +67,7 @@
             <input type="password" placeholder="your new password" class="box">
             <br>
             <br>
-            <button class="btn" id="login-regist-btn"
-                style="width: 10rem; color:white; background-color: var(--primary);" type="button">Change Password
+            <button class="btn" id="login-regist-btn" style="width: 10rem; color:white; background-color: var(--primary);" type="button">Change Password
             </button>
         </form>
 
@@ -123,22 +116,19 @@
                 </div>
             </div>
 
-            <a style="text-decoration: none;" href="checkout.html"><button class="btn"
-                    style=" width: 15rem; margin: 3.5vh auto;color:white; background-color: var(--primary);"
-                    type="button">Check Out</button></a>
+            <a style="text-decoration: none;" href="checkout.php"><button class="btn" style=" width: 15rem; margin: 3.5vh auto;color:white; background-color: var(--primary);" type="button">Check Out</button></a>
         </div>
     </header>
     <!-- header done----------------------------------------------------------------------------------------------------------- -->
 
     <div class="pilproduk" id="">
-        <h1>Our <span>Large Format</span> Digital Printing Product</h1>
+        <h1>Our <span>Stickers</span> Digital Printing Product</h1>
         <div class="row">
             <div class="col-sm-4">
                 <div class="jenis">
                     <div class="card-img-top  align-items-center">
                         <div>
-                            <img class="img-fluid" id="pilprodukimg" src="images/paper_businesscard.png"
-                                alt="Card image cap">
+                            <img class="img-fluid" id="pilprodukimg" src="images/paper_businesscard.png" alt="Card image cap">
                         </div>
                     </div>
                     <br>
@@ -181,8 +171,7 @@
                 <div class="jenis">
                     <div class="card-img-top  align-items-center">
                         <div>
-                            <img class="img-fluid" id="pilprodukimg" src="images/paper_businesscard.png"
-                                alt="Card image cap">
+                            <img class="img-fluid" id="pilprodukimg" src="images/paper_businesscard.png" alt="Card image cap">
                         </div>
                     </div>
                     <br>
@@ -225,8 +214,7 @@
                 <div class="jenis">
                     <div class="card-img-top  align-items-center">
                         <div>
-                            <img class="img-fluid" id="pilprodukimg" src="images/paper_businesscard.png"
-                                alt="Card image cap">
+                            <img class="img-fluid" id="pilprodukimg" src="images/paper_businesscard.png" alt="Card image cap">
                         </div>
                     </div>
                     <br>
@@ -282,8 +270,7 @@
                             <div class="control-group">
                                 <label class="control-label" for="inputType">Jenis Produk</label>
                                 <div class="controls">
-                                    <input type="text" class="input-simulate" id="jenisproduk"
-                                        placeholder="Paper - Brosur ">
+                                    <input type="text" class="input-simulate" id="jenisproduk" placeholder="Paper - Brosur ">
                                 </div>
                             </div>
 
