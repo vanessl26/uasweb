@@ -1,7 +1,3 @@
-<?php
-require "backend/conn.php";
-
-?>
 <!DOCTYPE html>
 <html>
 
@@ -10,6 +6,7 @@ require "backend/conn.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngeprint</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
@@ -40,28 +37,37 @@ require "backend/conn.php";
             <div class="fas fa-user" id="login-btn"></div>
         </div>
 
-        <form action="" class="login-form">
+        <form action="proses_login.php" class="login-form" method="POST">
             <h3>login now</h3>
-            <input type="email" placeholder="your email" class="box" required>
-            <input type="password" placeholder="your password" class="box" required>
+
+
+            <?php if (!empty($_GET['error'])) { ?>
+
+                <a style="color:red; margin-top:20px;">Wrong combination of email and password</a>
+
+            <?php unset($_GET['error']);
+            } ?>
+            <input type="email" placeholder="your email" name="loginemail" class="box" required>
+            <input type="password" placeholder="your password" name="loginpass" class="box" required>
             <p>forget your password <a id="forget-btn" style="text-decoration: underline;">click here</a></p>
             <p>don't have an account <a id="regist-btn" style="text-decoration: underline;">create now</a></p>
 
-            <button class=" btn" style="width: 10rem; color:white; background-color: var(--primary);" type="button">Login
+            <button class=" btn" style="width: 10rem; color:white; background-color: var(--primary);" type="submit">Login
                 In</button>
         </form>
 
-        <form action="" class="regist-form">
+        <form action="proses_regist.php" class="regist-form" method="POST">
             <h3>Register now</h3>
-            <input type="username" placeholder="your name" class="box" required>
-            <input type="email" placeholder="your email" class="box" required>
-            <input type="password" placeholder="your password" class="box" required>
-            <input type="text" placeholder="Kode Referal" class="box" required>
+            <input type="username" placeholder="your name" name="daftarname" class="box" required>
+            <input type="email" placeholder="your email" class="box" name="daftaremail" required>
+            <input type="password" placeholder="your password" class="box" name="daftarpass" required>
+            <input type="number" placeholder="your phone number" class="box" name="daftarnotelp" required>
+            <input type="text" placeholder="Kode Referal" class="box" name="daftarrole" required>
 
             <p>have an account? <a id="login-regist-btn">login now</a></p>
-
-            <button class="btn" id="login-regist-btn" style="width: 10rem; color:white; background-color: var(--primary);" type="button">Create Account
+            <button type="submit" class="btn" id="login-regist-btn" style="width: 10rem; color:white; background-color: var(--primary);">Create Account
             </button>
+
         </form>
 
         <form action="" class="forget-form">

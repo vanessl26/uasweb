@@ -1,13 +1,8 @@
 <?php
 
-require "backend/conn.php";
+require "conn.php";
 
-$username = ValidateName($_POST['daftarname'], $_POST['daftarpass']);
-
-if ($username ==  "ga bisa") {
-} else {
-    return $username;
-}
+ValidateName($_POST['daftarname'], $_POST['daftaremail'], $_POST['daftarpass'], $_POST['daftarnotelp'], $_POST['daftarrole']);
 
 
 
@@ -18,37 +13,38 @@ function alert($msg)
 }
 
 
-function ValidateName($username, $password)
+function ValidateName($username, $email,  $password, $no_telp, $role)
 {
 
 
     try {
         $con = GetConnection();
 
-        $query = "SELECT * FROM  akun WHERE username like ?";
+        $query = "SELECT * FROM  users WHERE email like ?";
 
         $result = $con->prepare($query);
-        $result->execute([$username]);
+        $result->execute(['daftaremail']);
 
         $row = $result->fetch();
-        if ($row['username'] != null && $row['username'] == $username) {
+        if ($row['email'] != null && $row['email'] ==  $email) {
 
-            return alert("Username telah ada di DB kami");
+            return alert("Email telah ada di DB kami");
+            header('Location: home.php');
         } else {
-
-
 
             $password =  password_hash($_POST['daftarpass'], PASSWORD_BCRYPT);
 
             $conn = GetConnection();
 
-            $sql =  "INSERT INTO akun ( username, password) VALUES (?, ?)";
+            $sql =  "INSERT INTO users ( username , email, password, no_telp, role) VALUES (?, ?,?,?,?)";
 
             $result = $conn->prepare($sql);
-            $result->execute([$username, $password]);
-            header('Location: login.php');
+            $result->execute([$username, $email,  $password, $no_telp, $role]);
+            header('Location: home.php');
         }
     } catch (Exception $e) {
         return "error";
+        echo "<script type='text/javascript'>alert('ha');
+    window.location.href='regist.php';</script>";
     }
 }
