@@ -17,6 +17,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
+    <style>
+        .form-group{
+            width: 97%;
+        }
+
+        #inputdropdown {
+            text-transform: uppercase;
+        }
+
+        .produkbutton{
+                width: 80%;
+                margin: 0 auto;
+            }
+
+        @media only screen and (max-width: 770px) {
+            .form-group{
+                width: 95%;
+            }
+        }
+
+        @media only screen and (max-width: 575px) {
+            .form-group{
+                width: 98%;
+            }
+
+            .produkbutton{
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -316,12 +347,6 @@
 
         </section>
 
-
-
-
-
-
-
         <footer class="text-lg-start text-muted" id="footerkonten">
             <section class="">
                 <div class="container text-center text-md-start ">
@@ -368,6 +393,4 @@
             </section>
         </footer>
 </body>
-
-
 </html>
